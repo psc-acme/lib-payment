@@ -1,0 +1,42 @@
+{
+    "name": "psc-acme/lib-payment",
+    "description": "Package lib-payment for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\LibPayment\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "spatie/laravel-permission": "^6.0",
+        "symfony/event-dispatcher": "^7.0",
+        "symfony/mailer": "^7.0",
+        "aws/aws-sdk-php": "^3.332",
+        "laravel/framework": "^11.0",
+        "psr/log": "^3.0"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^7.0",
+        "webforge/object-asserter": "^2.0.0",
+        "phpstan/phpstan": "^1.0"
+    },
+    "minimum-stability": "dev",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
